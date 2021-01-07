@@ -24,7 +24,7 @@ mongoose.connect("mongodb://localhost/budget", {
 //use the next line when using local system server
 //app.use(require("./routes/api.js"));
 //use this next time when using heroku
-app.use(require("/routes/api.js"));
+app.use(require("routes/api.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
